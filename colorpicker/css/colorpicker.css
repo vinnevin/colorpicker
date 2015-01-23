@@ -1,60 +1,45 @@
-.colorpicker {
-	float: left;
-	margin: 30px;
+.wcagColorPicker {
+	background-color: #f1f1f1;
+	padding: 20px;
 }
-.colorpicker .colorWheel {
-	width: 310px;
-	height: 310px;
+.wcagColorPicker .colorPickerContainer {
+	float: left;
+}
+.wcagColorPicker .colorPickerContainer .colorWheelContainer {
+	float: left;
 	position: relative;
-	background: url(../images/color_wheel_large.png) no-repeat 10px 10px;
-	background-size: 300px 300px;
-	margin-bottom: 30px;
+}
+.wcagColorPicker .colorPickerContainer .colorWheelContainer canvas {
+	padding: 5px 0 0 5px;
+}
+.wcagColorPicker .colorPickerContainer .saturationSliderContainer {
 	float: left;
-	margin-right: 30px;
+	padding: 0 10px;
 }
-.colorpicker .colorWheel .cross {
-	background: url(../images/cross.png) no-repeat center center;
-	width: 20px;
-	height: 20px;
+.wcagColorPicker .colorPickerContainer .saturationSliderContainer .saturationValue {
+	height: 10%;
+}
+.wcagColorPicker .colorPickerContainer .saturationSliderContainer .saturationSlider {
+	height: 90%;
+	margin: 0 10px;
+}
+
+.wcagColorPicker .colorDisplayContainer {
+	clear: both;
+	padding: 10px;
+}
+
+canvas {
+	margin-top: -10px;
+}
+.canvasContainer {
+	position: relative;
+}
+.marker {
 	position: absolute;
-	top: 150px;
-	left: 150px;
-	z-index: 2000;
-	cursor: pointer;
-}
-.colorpicker .saturationSlider {
+	top: 0;
+	left: 0;
+	width: 10px;
 	height: 10px;
-	border: 1px solid black;
-	position: relative;
-	margin: 0 5px;
-	clear: both;
+	background: url(../images/cross.png) no-repeat center center;
 }
-.colorpicker .saturationSlider .slider {
-	height: 20px;
-	width: 4px;
-	background: black;
-	position: absolute;
-	right: 0;
-	top: -5px;
-}
-.colorpicker .inputs {
-	float: right;
-	width: 70px;
-}
-.colorpicker .inputs label {
-	float: left;
-	margin-right: 10px;
-}
-.colorpicker .inputs input {
-	float: left;
-	width: 40px;
-}
-
-.target {
-	margin-top: 50px;
-	width: 300px;
-	height: 300px;
-	border: 1px solid black;
-	clear: both;
-}
-
