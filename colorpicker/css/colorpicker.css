@@ -1,0 +1,60 @@
+.colorpicker {
+	float: left;
+	margin: 30px;
+}
+.colorpicker .colorWheel {
+	width: 310px;
+	height: 310px;
+	position: relative;
+	background: url(../images/color_wheel_large.png) no-repeat 10px 10px;
+	background-size: 300px 300px;
+	margin-bottom: 30px;
+	float: left;
+	margin-right: 30px;
+}
+.colorpicker .colorWheel .cross {
+	background: url(../images/cross.png) no-repeat center center;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	z-index: 2000;
+	cursor: pointer;
+}
+.colorpicker .saturationSlider {
+	height: 10px;
+	border: 1px solid black;
+	position: relative;
+	margin: 0 5px;
+	clear: both;
+}
+.colorpicker .saturationSlider .slider {
+	height: 20px;
+	width: 4px;
+	background: black;
+	position: absolute;
+	right: 0;
+	top: -5px;
+}
+.colorpicker .inputs {
+	float: right;
+	width: 70px;
+}
+.colorpicker .inputs label {
+	float: left;
+	margin-right: 10px;
+}
+.colorpicker .inputs input {
+	float: left;
+	width: 40px;
+}
+
+.target {
+	margin-top: 50px;
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	clear: both;
+}
+

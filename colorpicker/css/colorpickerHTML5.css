@@ -1,0 +1,45 @@
+.wcagColorPicker {
+	background-color: #f1f1f1;
+	padding: 20px;
+}
+.wcagColorPicker .colorPickerContainer {
+	float: left;
+}
+.wcagColorPicker .colorPickerContainer .colorWheelContainer {
+	float: left;
+	position: relative;
+}
+.wcagColorPicker .colorPickerContainer .colorWheelContainer canvas {
+	padding: 5px 0 0 5px;
+}
+.wcagColorPicker .colorPickerContainer .saturationSliderContainer {
+	float: left;
+	padding: 0 10px;
+}
+.wcagColorPicker .colorPickerContainer .saturationSliderContainer .saturationValue {
+	height: 10%;
+}
+.wcagColorPicker .colorPickerContainer .saturationSliderContainer .saturationSlider {
+	height: 90%;
+	margin: 0 10px;
+}
+
+.wcagColorPicker .colorDisplayContainer {
+	clear: both;
+	padding: 10px;
+}
+
+canvas {
+	margin-top: -10px;
+}
+.canvasContainer {
+	position: relative;
+}
+.marker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: url(../images/cross.png) no-repeat center center;
+}
