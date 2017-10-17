@@ -1,0 +1,30 @@
+<html>
+<head>
+	<script type="text/javascript" src="slider.js"></script>
+	<script type="text/javascript" src="color-wheel.js"></script>
+	<script type="text/javascript" src="color-picker.js"></script>
+	<script type="text/javascript" src="wcag-color-picker.js"></script>
+	<!--<script type="text/javascript" src="colorwheel-es6.js"></script>-->
+
+	<link rel="stylesheet" type="text/css" href="color-picker.css">
+</head>
+<body>
+	<div id="color-picker"></div>
+	<!--
+	<div class="colorPicker">
+		<div class="colorWheel"></div>
+		<div id="slider" class="slider"></div>
+		<div class="colorDisplay"></div>
+		<div class="colorInfo"></div>
+		
+	</div>
+	-->
+	<script type="text/javascript">
+		const colorPicker = new WCAGColorPicker({
+			el: document.querySelector('#color-picker'),
+			radius: 100
+		});
+		colorPicker.render();
+	</script>
+</body>
+</html>
